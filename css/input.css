@@ -32,6 +32,15 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #059669;
+    color: white;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -52,4 +61,13 @@ h6 {
 .skill-bar {
     width: 0;
     transition: width 2s ease;
+}
+
+/* ==========================
+   Active Navigation Link
+========================== */
+
+.active-link {
+    color: #059669;
+    font-weight: 700;
 }
