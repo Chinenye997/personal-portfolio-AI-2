@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* ==========================
+   Global Styles
+========================== */
+
+:root {
+    --brand-color: #059669;
+}
+
+.brand-text {
+    @apply text-emerald-600;
+}
+
+.brand-hover:hover {
+    @apply text-emerald-600;
+}
+
+.brand-bg {
+    background-color: var(--brand-color);
+}
+
+.brand-bg:hover {
+    background-color: #047857;
+}
+
+.brand-border {
+    border: 2px solid var(--brand-color);
+}
+
+.brand-shadow {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================
+   Skill Progress Animation
+========================== */
+
+.skill-bar {
+    width: 0;
+    transition: width 2s ease;
+}

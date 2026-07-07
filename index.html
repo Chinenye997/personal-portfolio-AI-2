@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website Title -->
+    <title>Chi.dev | Personal Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <!-- <body class="bg-white text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-white"> -->
+  <body class="bg-white text-gray-800">
+    <!-- ==========================
+         HEADER / NAVIGATION
+    =========================== -->
+
+    <!-- <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"> -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold brand-text"> Chi.dev </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li>
+            <a href="index.html" class="brand-hover transition"> Home </a>
+          </li>
+
+          <li>
+            <a href="pages/about.html" class="brand-hover transition">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/projects.html" class="brand-hover transition">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/resume.html" class="brand-hover transition">
+              Resume
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/contact.html" class="brand-hover transition">
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <!-- Right Side Buttons -->
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="text-xl cursor-pointer brand-hover transition"
+            aria-label="Toggle Dark Mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="text-2xl cursor-pointer md:hidden brand-hover transition"
+            aria-label="Open Menu"
+          >
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- ==========================
+             Mobile Navigation
+         ========================== -->
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <ul class="flex flex-col p-6 space-y-4">
+          <li>
+            <a href="index.html" class="brand-hover transition"> Home </a>
+          </li>
+
+          <li>
+            <a href="pages/about.html" class="brand-hover transition">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/projects.html" class="brand-hover transition">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/resume.html" class="brand-text transition">
+              Resume
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/contact.html" class="brand-hover transition">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ==========================
+         MAIN CONTENT
+       =========================== -->
+
+    <main>
+      <!-- ==========================
+     Hero Section
+      ========================== -->
+      <section id="hero" class="bg-stone-100 pt-28 pb-16">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Hero Card -->
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-14"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
+              <!-- ==========================
+             Hero Content
+        ========================== -->
+              <div>
+                <p
+                  class="brand-text text-base md:text-lg font-semibold uppercase tracking-[0.2em] mb-3"
+                >
+                  Hello, I'm
+                </p>
+
+                <h1
+                  class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
+                >
+                  Gift Chinenyenwa <br />
+                  Edeh
+                </h1>
+
+                <h2
+                  class="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-600 mb-6"
+                >
+                  Computer Science Student &
+                  <span class="brand-text">Full Stack Web Developer</span>
+                </h2>
+
+                <p class="text-lg leading-9 text-slate-600 max-w-xl mb-10">
+                  I build responsive, user-friendly, and modern web applications
+                  using HTML, Tailwind CSS, JavaScript, and ASP.NET Core MVC. I
+                  enjoy transforming ideas into real-world digital solutions
+                  through clean code and thoughtful design.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                  <a
+                    href="assets/resume/Edeh-Chinenye-FullStack-Web-Developer-Resume.pdf"
+                    class="brand-bg text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+                  >
+                    📄 Download Resume
+                  </a>
+
+                  <a
+                    href="pages/projects.html"
+                    class="brand-border brand-text px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+                  >
+                    💼 View Projects
+                  </a>
+                </div>
+              </div>
+
+              <!-- ==========================
+              Hero Image
+              ========================== -->
+
+              <div class="flex justify-center lg:justify-end items-center">
+                <img
+                  src="assets/images/Gift Edeh.jpg"
+                  alt="Gift Chinenyenwa Edeh"
+                  class="w-72 md:w-80 lg:w-/[360px] xl:w-/[400px] rounded-[180px] shadow-2xl transition duration-300 hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     About Section
+========================== -->
+      <section id="about" class="bg-stone-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-16"
+          >
+            <!-- Section Heading -->
+            <div class="text-center mb-14">
+              <p
+                class="brand-text uppercase tracking-[0.2em] font-semibold mb-3"
+              >
+                About Me
+              </p>
+
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Get to Know Me
+              </h2>
+
+              <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+                Learn more about my journey as a Computer Science student and
+                Full Stack Web Developer, my passion for technology, and my goal
+                of building impactful digital solutions.
+              </p>
+            </div>
+
+            <!-- About Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <!-- Image -->
+              <div class="flex justify-center">
+                <img
+                  src="assets/images/Gift Edeh.jpg"
+                  alt="Gift Chinenyenwa Edeh"
+                  class="w-72 md:w-80 lg:w-[360px] rounded-[30px] shadow-xl"
+                />
+              </div>
+
+              <!-- Content -->
+              <div>
+                <h3 class="text-3xl font-bold mb-6">
+                  Computer Science Student &
+                  <span class="brand-text">Full Stack Web Developer</span>
+                </h3>
+
+                <p class="text-slate-600 leading-8 mb-6">
+                  I am passionate about creating responsive, user-friendly, and
+                  modern web applications using HTML, Tailwind CSS, JavaScript,
+                  and ASP.NET Core MVC.
+                </p>
+
+                <p class="text-slate-600 leading-8 mb-8">
+                  I enjoy solving real-world problems through clean code,
+                  continuous learning, and building applications that make
+                  everyday tasks easier and more efficient.
+                </p>
+
+                <a
+                  href="pages/about.html"
+                  class="inline-flex items-center gap-2 brand-bg text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+                >
+                  Read More
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Skills Preview Section
+========================== -->
+      <section id="skills" class="bg-stone-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-16"
+          >
+            <!-- Section Heading -->
+            <div class="text-center mb-14">
+              <p
+                class="brand-text uppercase tracking-[0.2em] font-semibold mb-3"
+              >
+                My Skills
+              </p>
+
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Technologies I Work With
+              </h2>
+
+              <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+                Throughout my learning journey, I have developed practical
+                experience building responsive, scalable, and user-friendly web
+                applications using modern frontend and backend technologies.
+              </p>
+            </div>
+
+            <!-- Skills Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <!-- Left -->
+              <div>
+                <div class="grid grid-cols-2 gap-5">
+                  <div
+                    class="bg-stone-50 rounded-2xl p-5 text-center shadow-sm"
+                  >
+                    <i
+                      class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"
+                    ></i>
+                    <h3 class="font-semibold">HTML5</h3>
+                  </div>
+
+                  <div
+                    class="bg-stone-50 rounded-2xl p-5 text-center shadow-sm"
+                  >
+                    <i
+                      class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3"
+                    ></i>
+                    <h3 class="font-semibold">CSS3</h3>
+                  </div>
+
+                  <div
+                    class="bg-stone-50 rounded-2xl p-5 text-center shadow-sm"
+                  >
+                    <i
+                      class="fa-brands fa-js text-4xl text-yellow-400 mb-3"
+                    ></i>
+                    <h3 class="font-semibold">JavaScript</h3>
+                  </div>
+
+                  <div
+                    class="bg-stone-50 rounded-2xl p-5 text-center shadow-sm"
+                  >
+                    <i class="fa-solid fa-wind text-4xl text-cyan-500 mb-3"></i>
+                    <h3 class="font-semibold">Tailwind CSS</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <h3 class="text-3xl font-bold mb-6">
+                  Building Modern Web Applications
+                </h3>
+
+                <p class="text-slate-600 leading-8 mb-6">
+                  I use modern web technologies to create responsive,
+                  user-friendly, and maintainable applications. My focus is on
+                  writing clean code and building practical solutions that
+                  provide a great user experience.
+                </p>
+
+                <p class="text-slate-600 leading-8 mb-8">
+                  My complete technical skills include frontend development,
+                  backend development, databases, version control, and
+                  responsive web design.
+                </p>
+
+                <a
+                  href="pages/skills.html"
+                  class="inline-flex items-center gap-2 brand-bg text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+                >
+                  View All Skills
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Featured Projects Section
+========================== -->
+      <section id="projects" class="bg-stone-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-16"
+          >
+            <!-- Section Heading -->
+            <div class="text-center mb-14">
+              <p
+                class="brand-text uppercase tracking-[0.2em] font-semibold mb-3"
+              >
+                Featured Projects
+              </p>
+
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Some of My Recent Work
+              </h2>
+
+              <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+                Here are some of the web applications I have built during my
+                learning journey. Each project demonstrates my ability to solve
+                problems, write clean code, and build responsive user-friendly
+                websites.
+              </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Project 1 -->
+              <div
+                class="bg-stone-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              >
+                <img
+                  src="assets/screenshots/Stockwise-IMS.png"
+                  alt="StockWise IMS"
+                  class="w-full h-56 object-cover"
+                />
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3">StockWise IMS</h3>
+
+                  <p class="text-slate-600 leading-7 mb-6">
+                    A responsive Inventory Management System that helps
+                    businesses manage products, suppliers, stock movement, and
+                    reports.
+                  </p>
+
+                  <a
+                    href="pages/projects.html"
+                    class="brand-text font-semibold inline-flex items-center gap-2"
+                  >
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div
+                class="bg-stone-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              >
+                <img
+                  src="assets/screenshots/enuguair.png"
+                  alt="EnuguAir Travels"
+                  class="w-full h-56 object-cover"
+                />
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3">EnuguAir Travels</h3>
+
+                  <p class="text-slate-600 leading-7 mb-6">
+                    A modern travel agency website designed to showcase travel
+                    destinations and booking services.
+                  </p>
+
+                  <a
+                    href="pages/projects.html"
+                    class="brand-text font-semibold inline-flex items-center gap-2"
+                  >
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div
+                class="bg-stone-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              >
+                <img
+                  src="assets/screenshots/mamaput.png"
+                  alt="MamaPutOnline"
+                  class="w-full h-56 object-cover"
+                />
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3">MamaPutOnline</h3>
+
+                  <p class="text-slate-600 leading-7 mb-6">
+                    A restaurant website that allows customers to explore meals
+                    and learn more about Nigerian local cuisine.
+                  </p>
+
+                  <a
+                    href="pages/projects.html"
+                    class="brand-text font-semibold inline-flex items-center gap-2"
+                  >
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 4 -->
+              <div
+                class="bg-stone-50 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+              >
+                <img
+                  src="assets/screenshots/ChildrenSmart.png"
+                  alt="ChildrenSmart"
+                  class="w-full h-56 object-cover"
+                />
+
+                <div class="p-6">
+                  <h3 class="text-2xl font-bold mb-3">ChildrenSmart</h3>
+
+                  <p class="text-slate-600 leading-7 mb-6">
+                    A responsive children's clothing website with a modern
+                    landing page and product showcase.
+                  </p>
+
+                  <a
+                    href="pages/projects.html"
+                    class="brand-text font-semibold inline-flex items-center gap-2"
+                  >
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mt-14">
+              <a
+                href="pages/projects.html"
+                class="brand-bg text-white px-8 py-4 rounded-xl font-semibold inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
+              >
+                View All Projects
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Resume Preview Section
+========================== -->
+      <section id="resume" class="bg-stone-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-16"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+              <!-- Left -->
+              <div>
+                <p
+                  class="brand-text uppercase tracking-[0.2em] font-semibold mb-3"
+                >
+                  Resume
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                  My Professional Resume
+                </h2>
+
+                <p class="text-slate-600 leading-8 mb-6">
+                  My resume highlights my educational background, technical
+                  skills, projects, and experience as a Computer Science student
+                  and Full-Stack Web Developer.
+                </p>
+
+                <p class="text-slate-600 leading-8 mb-10">
+                  It is ATS-friendly and designed to present my qualifications
+                  clearly to recruiters and employers.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                  <a
+                    href="assets/resume/Edeh-Chinenye-FullStack-Web-Developer-Resume.pdf"
+                    download
+                    class="brand-bg text-white px-7 py-4 rounded-xl font-semibold"
+                  >
+                    📄 Download Resume
+                  </a>
+
+                  <a
+                    href="pages/resume.html"
+                    class="brand-border brand-text px-7 py-4 rounded-xl font-semibold"
+                  >
+                    View Resume
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div class="flex justify-center">
+                <div
+                  class="w-72 md:w-80 bg-stone-100 rounded-2xl shadow-lg p-8"
+                >
+                  <i
+                    class="fa-solid fa-file-lines text-7xl brand-text mb-6"
+                  ></i>
+
+                  <h3 class="text-2xl font-bold mb-4">ATS-Compliant Resume</h3>
+
+                  <p class="text-slate-600 leading-7">
+                    Optimized for Applicant Tracking Systems (ATS) while
+                    maintaining a clean and professional layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Contact Preview Section
+========================== -->
+      <section id="contact" class="bg-stone-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-16"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+              <!-- Left -->
+              <div>
+                <p
+                  class="brand-text uppercase tracking-[0.2em] font-semibold mb-3"
+                >
+                  Contact Me
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                  Let's Build Something Amazing Together
+                </h2>
+
+                <p class="text-slate-600 leading-8 mb-8">
+                  Whether you have a project, an internship opportunity, or
+                  simply want to connect, I'd be happy to hear from you.
+                </p>
+
+                <div class="space-y-5">
+                  <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-envelope brand-text text-xl"></i>
+                    <span>edehg997@gmail.com</span>
+                  </div>
+
+                  <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-phone brand-text text-xl"></i>
+                    <span>+234 9030198027</span>
+                  </div>
+
+                  <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-location-dot brand-text text-xl"></i>
+                    <span>Enugu, Nigeria</span>
+                  </div>
+                </div>
+
+                <a
+                  href="pages/contact.html"
+                  class="inline-flex items-center gap-2 brand-bg text-white px-7 py-4 rounded-xl font-semibold mt-10"
+                >
+                  Contact Me
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Right -->
+
+              <div class="flex justify-center">
+                <div
+                  class="bg-stone-100 rounded-2xl p-10 shadow-md w-full max-w-md text-center"
+                >
+                  <i
+                    class="fa-solid fa-paper-plane text-7xl brand-text mb-6"
+                  ></i>
+
+                  <h3 class="text-2xl font-bold mb-4">Open to Opportunities</h3>
+
+                  <p class="text-slate-600 leading-8">
+                    I am always eager to learn, collaborate, and contribute to
+                    exciting projects that help me grow as a Full-Stack Web
+                    Developer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================
+     Footer
+========================== -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- About -->
+          <div>
+            <h2 class="text-2xl font-bold brand-text mb-5">Gift Edeh</h2>
+
+            <p class="text-slate-300 leading-8">
+              Computer Science Student and Full-Stack Web Developer passionate
+              about building responsive, user-friendly, and modern web
+              applications.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Quick Links</h3>
+
+            <ul class="space-y-3">
+              <li>
+                <a href="#hero" class="hover:text-emerald-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-emerald-400 transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="hover:text-emerald-400 transition"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-emerald-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-emerald-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">What I Do</h3>
+
+            <ul class="space-y-3 text-slate-300">
+              <li>Responsive Website Development</li>
+              <li>Frontend Development</li>
+              <li>Backend Development (ASP.NET Core MVC)</li>
+              <li>Database Management (SQL Server)</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Contact</h3>
+
+            <div class="space-y-4 text-slate-300">
+              <p>
+                <i class="fa-solid fa-envelope brand-text mr-2"></i>
+                edehg997@gmail.com
+              </p>
+
+              <p>
+                <i class="fa-solid fa-phone brand-text mr-2"></i>
+                +234 903 0198 027
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot brand-text mr-2"></i>
+                Enugu, Nigeria
+              </p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-6">
+              <a href="https://github.com/Chinenye997/gift-portfolio.git" class="text-2xl hover:text-emerald-400 transition">
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/gift-edeh-5a2021312?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="text-2xl hover:text-emerald-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+
+              <a href="https://x.com/edehg997" class="text-2xl hover:text-emerald-400 transition">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a href="https://www.facebook.com/share/p/1EHpLvFVeq/" class="text-2xl hover:text-emerald-400 transition">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-slate-700 mt-12 pt-8 text-center">
+          <p class="text-slate-400">
+            © 2026 Gift Chinenyenwa Edeh. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
