@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chi.dev | Personal Portfolio</title>
+
+    <title>Skills | Chi.dev</title>
 
     <!-- Tailwind CSS -->
     <link href="../css/output.css" rel="stylesheet" />
@@ -18,13 +20,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body class="bg-white text-gray-800">
+  <body class="bg-stone-100">
     <!-- ==========================
          HEADER / NAVIGATION
     =========================== -->
@@ -35,7 +38,7 @@
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3">
           <div
             class="brand-bg w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
           >
@@ -54,31 +57,23 @@
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex items-center gap-8">
           <li>
-            <a href="index.html" class="active-link transition"> Home </a>
+            <a href="#hero" class="active-link transition"> Home </a>
           </li>
 
           <li>
-            <a href="pages/about.html" class="brand-hover transition">
-              About
-            </a>
+            <a href="#about" class="brand-hover transition"> About </a>
           </li>
 
           <li>
-            <a href="pages/projects.html" class="brand-hover transition">
-              Projects
-            </a>
+            <a href="skills.html" class="active-link transition"> Skills </a>
           </li>
 
           <li>
-            <a href="pages/resume.html" class="brand-hover transition">
-              Resume
-            </a>
+            <a href="#projects" class="brand-hover transition"> Projects </a>
           </li>
 
           <li>
-            <a href="pages/contact.html" class="brand-hover transition">
-              Contact
-            </a>
+            <a href="#contact" class="brand-hover transition"> Contact </a>
           </li>
         </ul>
 
@@ -108,35 +103,671 @@
       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
         <ul class="flex flex-col p-6 space-y-4">
           <li>
-            <a href="index.html" class="active-link transition"> Home </a>
+            <a href="#hero" class="active-link transition"> Home </a>
           </li>
 
           <li>
-            <a href="pages/about.html" class="brand-hover transition">
-              About
-            </a>
+            <a href="#about" class="brand-hover transition"> About </a>
           </li>
 
           <li>
-            <a href="pages/projects.html" class="brand-hover transition">
-              Projects
-            </a>
+            <a href="#skills" class="brand-hover transition"> Skills </a>
           </li>
 
           <li>
-            <a href="pages/resume.html" class="brand-hover transition">
-              Resume
-            </a>
+            <a href="#projects" class="brand-hover transition"> Projects </a>
           </li>
 
           <li>
-            <a href="pages/contact.html" class="brand-hover transition">
-              Contact
-            </a>
+            <a href="#contact" class="brand-hover transition"> Contact </a>
           </li>
         </ul>
       </div>
     </header>
+
+    <!-- ==========================
+     Skills Hero Section
+========================== -->
+    <section class="bg-stone-100 py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-20 py-10 md:py-16"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="text-center lg:text-left mb-10 lg:mb-0">
+              <p class="brand-text font-semibold text-base md:text-lg mb-3">
+                My Technical Skills
+              </p>
+
+              <h1
+                class="text-3xl md:text-5xl font-extrabold leading-tight mb-5"
+              >
+                Technologies I Work With
+              </h1>
+
+              <p class="text-base md:text-lg leading-8 text-slate-600 mb-4">
+                Throughout my learning journey, I have developed practical
+                experience working with modern web technologies to build
+                responsive, user-friendly and scalable web applications.
+              </p>
+
+              <p class="text-base md:text-lg leading-8 text-slate-600 mb-8">
+                I enjoy learning new technologies, improving my problem-solving
+                skills, and writing clean, maintainable code.
+              </p>
+
+              <a
+                href="../index.html#projects"
+                class="inline-block brand-bg text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+              >
+                View My Projects
+              </a>
+            </div>
+
+            <!-- Right Content -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div
+                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <i class="fa-solid fa-code text-4xl brand-text mb-4"></i>
+                <h3 class="font-bold text-lg">Frontend</h3>
+                <p class="text-slate-600 mt-2">
+                  HTML, CSS, Tailwind, JavaScript
+                </p>
+              </div>
+
+              <div
+                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <i class="fa-solid fa-server text-4xl brand-text mb-4"></i>
+                <h3 class="font-bold text-lg">Backend</h3>
+                <p class="text-slate-600 mt-2">ASP.NET Core MVC</p>
+              </div>
+
+              <div
+                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <i class="fa-solid fa-database text-4xl brand-text mb-4"></i>
+                <h3 class="font-bold text-lg">Database</h3>
+                <p class="text-slate-600 mt-2">SQL Server</p>
+              </div>
+
+              <div
+                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <i class="fa-brands fa-github text-4xl brand-text mb-4"></i>
+                <h3 class="font-bold text-lg">Tools</h3>
+                <p class="text-slate-600 mt-2">
+                  Git, GitHub, VS Code, Visual Studio
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+     Frontend Development
+========================== -->
+    <section class="bg-stone-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
+        >
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <p class="brand-text font-semibold text-lg mb-3">
+              Frontend Development
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">
+              Building Modern User Interfaces
+            </h2>
+
+            <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+              I enjoy creating responsive, accessible and user-friendly
+              interfaces using modern frontend technologies. My focus is on
+              writing clean code and building websites that work well across
+              different devices.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- HTML -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <i class="fa-brands fa-html5 text-5xl text-orange-500 mb-5"></i>
+              <h3 class="font-bold text-xl mb-2">HTML5</h3>
+              <p class="text-slate-600">
+                Semantic and accessible web page structure.
+              </p>
+            </div>
+
+            <!-- CSS -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <i class="fa-brands fa-css3-alt text-5xl text-blue-500 mb-5"></i>
+              <h3 class="font-bold text-xl mb-2">CSS3</h3>
+              <p class="text-slate-600">
+                Responsive layouts, animations and modern styling.
+              </p>
+            </div>
+
+            <!-- Tailwind -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <i class="fa-solid fa-wind text-5xl text-cyan-500 mb-5"></i>
+              <h3 class="font-bold text-xl mb-2">Tailwind CSS</h3>
+              <p class="text-slate-600">
+                Utility-first CSS framework for rapid UI development.
+              </p>
+            </div>
+
+            <!-- JavaScript -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <i class="fa-brands fa-js text-5xl text-yellow-400 mb-5"></i>
+              <h3 class="font-bold text-xl mb-2">JavaScript</h3>
+              <p class="text-slate-600">
+                Interactive interfaces and dynamic web functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+     Backend Development
+========================== -->
+    <section class="bg-stone-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
+        >
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <p class="brand-text font-semibold text-lg mb-3">
+              Backend Development
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">
+              Building Powerful Web Applications
+            </h2>
+
+            <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+              I enjoy building secure, scalable, and maintainable web
+              applications using Microsoft's ASP.NET Core MVC framework and SQL
+              Server database. I focus on writing organized code and designing
+              applications that solve real-world problems.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- ASP.NET -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-code text-5xl brand-text mb-5"></i>
+
+              <h3 class="text-2xl font-bold mb-4">ASP.NET Core MVC</h3>
+
+              <p class="text-slate-600 leading-8">
+                I build full-stack web applications using the MVC architecture,
+                implementing authentication, CRUD operations, Entity Framework
+                Core, SQL Server, and responsive user interfaces.
+              </p>
+            </div>
+
+            <!-- SQL -->
+            <div
+              class="bg-stone-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-database text-5xl brand-text mb-5"></i>
+
+              <h3 class="text-2xl font-bold mb-4">SQL Server</h3>
+
+              <p class="text-slate-600 leading-8">
+                I design relational databases, create efficient tables and
+                relationships, write SQL queries, and integrate SQL Server with
+                ASP.NET Core MVC applications using Entity Framework Core.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+     Artificial Intelligence
+========================== -->
+    <section class="bg-stone-100 py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
+        >
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <p class="brand-text font-semibold text-lg mb-3">
+              Artificial Intelligence
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">
+              AI Skills & Learning Journey
+            </h2>
+
+            <p class="text-slate-600 max-w-3xl mx-auto leading-8">
+              Alongside web development, I have been learning Artificial
+              Intelligence concepts and applying AI tools to solve practical
+              problems. My journey focuses on Natural Language Processing,
+              prompt engineering, software documentation, and other AI-powered
+              workflows while I continue expanding my knowledge.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Prompt Engineering -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-brain text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">Prompt Engineering</h3>
+              <p class="text-slate-600">
+                Creating effective prompts to generate code, content,
+                documentation, and solve technical problems with AI.
+              </p>
+            </div>
+
+            <!-- NLP -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-language text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">
+                Natural Language Processing
+              </h3>
+              <p class="text-slate-600">
+                Learning how AI understands and processes human language through
+                NLP concepts.
+              </p>
+            </div>
+
+            <!-- Tokenization -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-font text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">Tokenization</h3>
+              <p class="text-slate-600">
+                Understanding how text is divided into meaningful units for
+                language models.
+              </p>
+            </div>
+
+            <!-- NER -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-tags text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">Named Entity Recognition</h3>
+              <p class="text-slate-600">
+                Learning how AI identifies names, locations, organizations, and
+                other entities from text.
+              </p>
+            </div>
+
+            <!-- Sentiment -->
+            <div
+              onclick="openSentimentModal()"
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <i class="fa-solid fa-face-smile text-4xl brand-text"></i>
+
+                <span
+                  class="bg-emerald-100 text-emerald-700 text-xs px-3 py-1 rounded-full font-semibold"
+                >
+                  Portfolio Project
+                </span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Sentiment Analysis</h3>
+              <p class="text-slate-600 mb-5">
+                Analyzing opinions and emotions expressed in customer comments
+                and social media content.
+              </p>
+
+              <div
+                class="flex items-center justify-between text-sm font-semibold brand-text group-hover:translate-x-1 transition"
+              >
+                <span>Click to view project</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <!-- Translation -->
+            <div
+              onclick="openTranslationModal()"
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <i class="fa-solid fa-globe text-4xl brand-text"></i>
+
+                <span
+                  class="bg-emerald-100 text-emerald-700 text-xs px-3 py-1 rounded-full font-semibold"
+                >
+                  Portfolio Project
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold mb-3">Language Translation</h3>
+
+              <p class="text-slate-600 mb-5">
+                Exploring AI-powered translation techniques for multilingual
+                communication.
+              </p>
+
+              <div
+                class="flex items-center justify-between text-sm font-semibold brand-text group-hover:translate-x-1 transition"
+              >
+                <span>Click to view project</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <!-- Computer Vision -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-eye text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">Computer Vision</h3>
+              <p class="text-slate-600">
+                Currently learning image analysis and computer vision concepts
+                using AI technologies.
+              </p>
+            </div>
+
+            <!-- Documentation -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-file-lines text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">Software Documentation</h3>
+              <p class="text-slate-600">
+                Creating professional technical documentation, project reports,
+                and user guides with AI assistance.
+              </p>
+            </div>
+
+            <!-- Podcast -->
+            <div
+              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <i class="fa-solid fa-podcast text-4xl brand-text mb-4"></i>
+              <h3 class="text-xl font-bold mb-3">AI-Assisted Podcasting</h3>
+              <p class="text-slate-600">
+                Planning and creating podcast content with the support of AI
+                tools and creative workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+        Language Translation Modal
+      ========================== -->
+    <div
+      id="translationModal"
+      class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4 py-8 overflow-y-auto"
+    >
+      <div
+        class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl p-6 md:p-8 relative animate-fadeIn my-auto max-h-[90vh] overflow-y-auto"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="closeTranslationModal()"
+          class="absolute top-5 right-5 text-2xl text-gray-500 hover:text-red-500 transition"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Title -->
+        <div class="text-center mb-8">
+          <i class="fa-solid fa-globe text-5xl brand-text mb-4"></i>
+
+          <h2 class="text-3xl font-bold mb-3">
+            The Library That Borrowed Tomorrow
+          </h2>
+
+          <p class="text-slate-600 leading-8 mt-4">
+            <strong>Project Type:</strong> Language Translation
+          </p>
+
+          <p class="text-slate-600 leading-8">
+            <strong>Category:</strong> Book Translation
+          </p>
+
+          <p class="text-slate-600 leading-8">
+            This project demonstrates the use of AI-assisted language
+            translation to translate my original novel from English into the
+            Igbo language while preserving meaning and readability.
+          </p>
+        </div>
+
+        <!-- Downloads -->
+        <!-- Versions -->
+        <div class="space-y-8">
+          <!-- English Version -->
+          <div class="bg-stone-100 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-3xl">📖</span>
+
+              <div>
+                <h3 class="text-xl font-bold">English Version</h3>
+
+                <p class="text-slate-600">Original Novel</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-5">
+              <a
+                href="../assets/books/THE LIBRARY THAT BORROWED TOMORROW (MS) (1).pdf"
+                target="_blank"
+                class="brand-border brand-text px-5 py-3 rounded-xl font-semibold transition hover:scale-105"
+              >
+                <i class="fa-solid fa-eye mr-2"></i>
+                View
+              </a>
+
+              <a
+                href="../assets/books/THE LIBRARY THAT BORROWED TOMORROW (MS) (1).pdf"
+                download
+                class="brand-bg text-white px-5 py-3 rounded-xl font-semibold transition hover:scale-105"
+              >
+                <i class="fa-solid fa-download mr-2"></i>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <!-- Igbo Version -->
+          <div class="bg-stone-100 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-3xl">🌍</span>
+
+              <div>
+                <h3 class="text-xl font-bold">Igbo Translation</h3>
+
+                <p class="text-slate-600">AI-assisted Translation</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-5">
+              <a
+                href="../assets/books/THE_LIBRARY_THAT_BORROWED_TOMORROW (1) igbo.pdf"
+                target="_blank"
+                class="brand-border brand-text px-5 py-3 rounded-xl font-semibold transition hover:scale-105"
+              >
+                <i class="fa-solid fa-eye mr-2"></i>
+                View
+              </a>
+
+              <a
+                href="../assets/books/THE_LIBRARY_THAT_BORROWED_TOMORROW (1) igbo.pdf"
+                download
+                class="brand-bg text-white px-5 py-3 rounded-xl font-semibold transition hover:scale-105"
+              >
+                <i class="fa-solid fa-download mr-2"></i>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================
+         Sentiment Analysis Modal
+     ========================== -->
+    <div
+      id="sentimentModal"
+      class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4 py-8 overflow-y-auto"
+    >
+      <div
+        class="bg-white rounded-3xl shadow-2xl w-full max-w-3xl p-6 md:p-8 my-auto max-h-[90vh] overflow-y-auto animate-fadeIn relative"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="closeSentimentModal()"
+          class="absolute top-5 right-5 text-2xl text-gray-500 hover:text-red-500 transition"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Header -->
+        <div class="text-center mb-8">
+          <i class="fa-solid fa-chart-line text-5xl brand-text mb-4"></i>
+
+          <h2 class="text-3xl font-bold mb-3">
+            Ntachi-Osa Restaurant Customer Sentiment Analysis
+          </h2>
+
+          <p class="text-slate-600 leading-8">
+            A sentiment analysis project based on customer discussions from
+            TikTok and YouTube to understand public opinion about Ntachi-Osa
+            Restaurant.
+          </p>
+        </div>
+
+        <!-- Project Information -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-stone-100 rounded-2xl p-5">
+            <h3 class="font-bold mb-2">Data Source</h3>
+            <p class="text-slate-600">TikTok & YouTube</p>
+          </div>
+
+          <div class="bg-stone-100 rounded-2xl p-5">
+            <h3 class="font-bold mb-2">Comments Analyzed</h3>
+            <p class="text-slate-600">137 Customer Comments</p>
+          </div>
+        </div>
+
+        <!-- Key Findings -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold mb-4">Key Findings</h3>
+
+          <p class="text-slate-600 leading-8">
+            Analysis of 137 customer comments revealed that the restaurant's
+            food quality and pricing received consistent praise. However,
+            customer service emerged as the biggest challenge, with a recurring
+            complaint that women were often served after men, particularly at
+            the New Heaven branch.
+          </p>
+        </div>
+
+        <!-- Sentiment Breakdown -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold mb-6">Sentiment Breakdown</h3>
+
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span>😊 Positive</span>
+                <span>20%</span>
+              </div>
+
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div
+                  class="bg-green-500 h-3 rounded-full"
+                  style="width: 20%"
+                ></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span>😐 Neutral</span>
+                <span>48%</span>
+              </div>
+
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div
+                  class="bg-yellow-400 h-3 rounded-full"
+                  style="width: 48%"
+                ></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span>😞 Negative</span>
+                <span>31%</span>
+              </div>
+
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div
+                  class="bg-red-500 h-3 rounded-full"
+                  style="width: 31%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="bg-stone-100 rounded-2xl p-6 mb-6">
+          <h3 class="text-xl font-bold mb-3">Conclusion</h3>
+
+          <p class="text-slate-600 leading-8">
+            Overall, the analysis shows that customers genuinely appreciate
+            Ntachi-Osa Restaurant's food quality and pricing. The primary
+            opportunity for improvement lies in customer service consistency,
+            particularly at the New Heaven branch.
+          </p>
+        </div>
+
+        <div class="mt-8 text-center">
+        <a
+          href="../assets/sentiment/Ntachi_Osa_Sentiment_Report (1).pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="brand-bg text-white px-8 py-3 rounded-xl font-semibold inline-flex items-center gap-2 transition hover:opacity-90"
+        >
+          <i class="fa-solid fa-book-open-reader"></i>
+          Read Full Analysis
+        </a>
+      </div>
+      </div>
+    </div>
 
     <script src="../js/app.js"></script>
   </body>

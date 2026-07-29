@@ -105,3 +105,71 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(skillBars[0]);
+
+
+/* ==========================
+   Translation Modal
+========================== */
+
+function openTranslationModal() {
+  const modal = document.getElementById("translationModal");
+
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeTranslationModal() {
+  const modal = document.getElementById("translationModal");
+
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+
+  document.body.style.overflow = "auto";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("translationModal");
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeTranslationModal();
+    }
+  });
+});
+
+
+/* ==========================
+   Sentiment Analysis Modal
+========================== */
+
+function openSentimentModal() {
+  const modal = document.getElementById("sentimentModal");
+
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeSentimentModal() {
+  const modal = document.getElementById("sentimentModal");
+
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+
+  document.body.style.overflow = "auto";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("sentimentModal");
+
+  if (modal) {
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeSentimentModal();
+      }
+    });
+  }
+});
