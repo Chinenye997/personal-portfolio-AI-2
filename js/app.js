@@ -16,16 +16,39 @@ const menuIcon = document.getElementById("menu-icon");
 const mobileLinks = document.querySelectorAll("#mobile-menu a");
 
 // Toggle the mobile menu
-menuBtn.addEventListener("click", function () {
+// ==========================
+// Mobile Navigation
+// ==========================
 
-    // Show or hide the menu
-    mobileMenu.classList.toggle("hidden");
+if (menuBtn && mobileMenu && menuIcon) {
 
-    // Change the icon
-    menuIcon.classList.toggle("fa-bars");
-    menuIcon.classList.toggle("fa-xmark");
+    // Toggle the mobile menu
+    menuBtn.addEventListener("click", function () {
 
-});
+        mobileMenu.classList.toggle("hidden");
+
+        menuIcon.classList.toggle("fa-bars");
+        menuIcon.classList.toggle("fa-xmark");
+
+    });
+
+    // Close menu after clicking a link
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            mobileMenu.classList.add("hidden");
+
+            menuIcon.classList.remove("fa-xmark");
+            menuIcon.classList.add("fa-bars");
+
+        });
+
+    });
+
+}
+
+
 
 // Close the mobile menu when a link is clicked
 mobileLinks.forEach(function (link) {
@@ -104,7 +127,9 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.3
 });
 
-observer.observe(skillBars[0]);
+if (skillBars.length > 0) {
+    observer.observe(skillBars[0]);
+}
 
 
 /* ==========================
@@ -172,4 +197,90 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+});
+
+
+/* ==========================
+   Podcast Modal
+========================== */
+
+function openPodcastModal() {
+  const modal = document.getElementById("podcastModal");
+
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closePodcastModal() {
+  const modal = document.getElementById("podcastModal");
+
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+
+  document.body.style.overflow = "auto";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("podcastModal");
+
+  if (modal) {
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closePodcastModal();
+      }
+    });
+  }
+});
+
+
+
+/* ==========================
+   Podcast Videos
+========================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const playJollof = document.getElementById("play-jollof");
+  const jollofContainer = document.getElementById("jollof-container");
+
+  if (playJollof) {
+    playJollof.addEventListener("click", function () {
+
+      jollofContainer.innerHTML = `
+        <iframe
+          class="w-full h-[320px] rounded-2xl"
+          src="https://app.heygen.com/embeds/6e5e06f422334a1bb07f55c1227e0a49"
+          title="The Great Jollof Debate"
+          frameborder="0"
+          allow="encrypted-media; fullscreen;"
+          allowfullscreen>
+        </iframe>
+      `;
+
+    });
+  }
+
+  const playFocus = document.getElementById("play-focus");
+  const focusContainer = document.getElementById("focus-container");
+
+  if (playFocus) {
+
+    playFocus.addEventListener("click", function () {
+
+      focusContainer.innerHTML = `
+        <video
+          controls
+          autoplay
+          class="w-full rounded-2xl"
+        >
+          <source src="../assets/videos/The_Circle_of_Light_Dealing_with_Distractions.mp4" type="video/mp4">
+        </video>
+      `;
+
+    });
+
+  }
+
 });
