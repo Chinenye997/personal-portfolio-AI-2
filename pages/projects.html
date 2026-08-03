@@ -1,39 +1,914 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- Tailwind CSS -->
+    <link href="../css/output.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-stone-100">
+    <!-- ==========================
+         HEADER / NAVIGATION
+    =========================== -->
+
+    <!-- <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"> -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <a href="../index.html" class="flex items-center gap-3">
+          <div
+            class="brand-bg w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
+          >
+            C
+          </div>
+
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">
+              Chi<span class="brand-text">.dev</span>
+            </h2>
+
+            <p class="text-xs text-slate-500 -mt-1">Full-Stack Developer</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li>
+            <a href="#hero" class="active-link transition"> Home </a>
+          </li>
+
+          <li>
+            <a href="#about" class="brand-hover transition"> About </a>
+          </li>
+
+          <li>
+            <a href="skills.html" class="active-link transition"> Skills </a>
+          </li>
+
+          <li>
+            <a href="#projects" class="brand-hover transition"> Projects </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="brand-hover transition"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- Right Side Buttons -->
+        <div class="flex items-center gap-4">
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="text-xl cursor-pointer brand-hover transition"
+            aria-label="Toggle Dark Mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="text-2xl cursor-pointer md:hidden brand-hover transition"
+            aria-label="Open Menu"
+          >
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <ul class="flex flex-col p-6 space-y-4">
+          <li>
+            <a href="#hero" class="active-link transition"> Home </a>
+          </li>
+
+          <li>
+            <a href="#about" class="brand-hover transition"> About </a>
+          </li>
+
+          <li>
+            <a href="#skills" class="brand-hover transition"> Skills </a>
+          </li>
+
+          <li>
+            <a href="#projects" class="brand-hover transition"> Projects </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="brand-hover transition"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- ==========================
      Projects Hero
 ========================== -->
 
-<section class="bg-stone-100 py-16 md:py-24">
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="bg-white rounded-[35px] brand-shadow text-center py-20 px-8"
+        >
+          <span class="brand-text font-semibold tracking-wide">
+            My Portfolio
+          </span>
 
-  <div class="max-w-7xl mx-auto px-6">
+          <h1 class="text-5xl font-bold mt-4 mb-6">Featured Projects</h1>
 
-    <div class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 py-16 text-center">
+          <p class="text-slate-500 max-w-3xl mx-auto leading-8">
+            Explore a collection of real-world projects demonstrating my
+            experience in Full-Stack Web Development, Artificial Intelligence,
+            software engineering and modern web technologies.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <p class="brand-text font-semibold text-lg mb-4">
-        Portfolio
-      </p>
+    <!-- ==========================
+     Web Development
+========================== -->
 
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        My Projects
-      </h1>
+    <section class="pb-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="brand-text font-semibold"> Web Development </span>
 
-      <p class="text-slate-600 max-w-3xl mx-auto leading-8">
-        A collection of web development, Artificial Intelligence, documentation,
-        podcasting, and software projects that demonstrate my learning journey,
-        technical skills, and passion for building real-world solutions.
-      </p>
+          <h2 class="text-4xl font-bold mt-3">Software Projects</h2>
 
-    </div>
+          <p class="text-slate-500 mt-4">
+            Websites and applications I designed and developed.
+          </p>
+        </div>
 
-  </div>
+        <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- Cards go here -->
+          <!-- Inventory Management System -->
 
-</section>
-</body>
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/ims-thumbnail.png"
+              >
+                <source src="assets/videos/ims-demo.mp4" type="video/mp4" />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                ASP.NET Core MVC
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">
+                Inventory Management System
+              </h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A complete inventory management system developed using ASP.NET
+                Core MVC, Entity Framework Core and SQL Server with
+                authentication, product, category and inventory management.
+              </p>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  ASP.NET MVC
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  EF Core
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  SQL Server
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Bootstrap
+                </span>
+              </div>
+
+              <!-- Links -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="#" class="font-semibold brand-text hover:underline">
+                  Live Demo
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+
+                <a href="#" class="text-slate-500 hover:text-emerald-600">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================
+     StockWise IMS
+========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/stockwise-thumbnail.png"
+              >
+                <source
+                  src="../assets/videos/Stockwise-IMS.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                HTML • CSS • JavaScript
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">StockWise IMS</h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A responsive Inventory Management System built with HTML, CSS
+                and JavaScript featuring product management, stock tracking and
+                a clean, user-friendly interface.
+              </p>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  HTML5
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  CSS3
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <!-- Links -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="#" class="font-semibold brand-text hover:underline">
+                  Live Demo
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+
+                <a href="#" class="text-slate-500 hover:text-emerald-600">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================
+     MamaPutOnline
+========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/mamaput-thumbnail.png"
+              >
+                <source src="../assets/videos/MamaPutOnline.mp4" type="video/mp4" />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                HTML • CSS • JavaScript
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">MamaPutOnline</h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A responsive restaurant website designed to provide an engaging
+                online food ordering experience with a clean interface and
+                modern layout.
+              </p>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  HTML5
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  CSS3
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <!-- Links -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="#" class="font-semibold brand-text hover:underline">
+                  Live Demo
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+
+                <a href="#" class="text-slate-500 hover:text-emerald-600">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================
+     Nexus
+========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/nexus-thumbnail.png"
+              >
+                <source src="../assets/videos/Nexus Showcase (1).mp4" type="video/mp4" />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                HTML • Tailwind CSS
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">Nexus</h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A modern, responsive landing page built with HTML and Tailwind
+                CSS, featuring a clean user interface and mobile-first design.
+              </p>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  HTML5
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Tailwind CSS
+                </span>
+              </div>
+
+              <!-- Links -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="#" class="font-semibold brand-text hover:underline">
+                  Live Demo
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+
+                <a href="#" class="text-slate-500 hover:text-emerald-600">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================
+     Blog Website
+========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/blog-thumbnail.png"
+              >
+                <source src="../assets/videos/Blog.mp4" type="video/mp4" />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                HTML • CSS • JavaScript
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">Blog Website</h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A responsive blog platform designed with a clean reading
+                experience, modern layout and intuitive navigation for sharing
+                articles and content.
+              </p>
+
+              <!-- Tech -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  HTML5
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  CSS3
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <!-- Links -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="#" class="font-semibold brand-text hover:underline">
+                  Live Demo
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+
+                <a href="#" class="text-slate-500 hover:text-emerald-600">
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+     Artificial Intelligence
+========================== -->
+
+    <section class="pb-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="brand-text font-semibold">
+            Artificial Intelligence
+          </span>
+
+          <h2 class="text-4xl font-bold mt-3">AI Projects</h2>
+
+          <p class="text-slate-500 mt-4">
+            AI-powered research, podcasting and language processing projects.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- AI cards go here -->
+
+          <!-- ==========================
+     Language Translation
+========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/translation-thumbnail.png"
+              >
+                <source
+                  src="../assets/videos/THE_LIBRARY_THAT_BORROWED_TOMORROW-Igbo-Translation (1).pdf.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                AI Translation
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">
+                English to Igbo Translation
+              </h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                An AI-assisted language translation project that translated my
+                original novel from English to Igbo while preserving meaning,
+                tone and readability.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  AI Translation
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Prompt Engineering
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Igbo Language
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a href="../assets/books/THE_LIBRARY_THAT_BORROWED_TOMORROW (1) igbo.pdf" 
+                   class="font-semibold brand-text hover:underline">
+                  View Project
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================
+              Ntachi-Osa Restaurant Customer Sentiment Analysis
+        ========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Video -->
+
+            <div class="relative aspect-video bg-slate-100">
+              <video
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/images/sentiment-thumbnail.png"
+              >
+                <source
+                  src="../assets/videos/sentiment-analysis-demo.mp4" type="video/mp4"
+                />
+              </video>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                Sentiment Analysis
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">
+                Ntachi-Osa Restaurant Customer Sentiment Analysis
+              </h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                An AI-powered sentiment analysis project based on 137 customer
+                comments collected from TikTok and YouTube to identify customer
+                opinions, emotions and key service improvement opportunities.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Sentiment Analysis
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  AI
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Data Analysis
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Prompt Engineering
+                </span>
+              </div>
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <a 
+                 href="../assets/sentiment/Ntachi_Osa_Sentiment_Report (1).pdf"
+                  target="_blank"
+                  class="font-semibold brand-text hover:underline"
+                >
+                  View Report
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+              <!-- ==========================
+                   AI-Assisted Podcasting
+              ========================== -->
+
+          <div
+            class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+          >
+            <!-- Preview -->
+
+            <div
+              class="relative aspect-video bg-stone-100 flex items-center justify-center"
+            >
+              <i class="fa-solid fa-podcast text-7xl brand-text"></i>
+
+              <span
+                class="absolute top-4 left-4 bg-white/90 text-sm font-semibold px-4 py-2 rounded-full brand-text"
+              >
+                AI Podcast
+              </span>
+            </div>
+
+            <!-- Content -->
+
+            <div class="p-7">
+              <h3 class="text-2xl font-bold mb-4">AI-Assisted Podcasting</h3>
+
+              <p class="text-slate-600 leading-8 mb-6">
+                A collection of AI-assisted podcast projects including
+                <strong>The Great Jollof Debate</strong> and
+                <strong>Dealing with Distractions</strong>, combining AI
+                scripting, narration and video production.
+              </p>
+
+              <!-- Skills -->
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  AI Script Writing
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  AI Video
+                </span>
+
+                <span
+                  class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium"
+                >
+                  Podcast Production
+                </span>
+              </div>
+
+              <!-- Link -->
+
+              <div class="flex justify-between items-center border-t pt-5">
+                <button
+                  onclick="openPodcastModal()"
+                  class="brand-text font-semibold hover:underline"
+                >
+                  View Podcasts
+
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================
+                        Footer
+        ========================== -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- About -->
+          <div>
+            <h2 class="text-2xl font-bold brand-text mb-5">Gift Edeh</h2>
+
+            <p class="text-slate-300 leading-8">
+              Computer Science Student and Full-Stack Web Developer passionate
+              about building responsive, user-friendly, and modern web
+              applications.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Quick Links</h3>
+
+            <ul class="space-y-3">
+              <li>
+                <a href="/index.html" class="brand-hover transition">Home</a>
+              </li>
+              <li><a href="#about" class="brand-hover transition">About</a></li>
+              <li>
+                <a href="./skills.html" class="brand-hover transition"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="./projects.html" class="brand-hover transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" class="brand-hover transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">What I Do</h3>
+
+            <ul class="space-y-3 text-slate-300">
+              <li>Responsive Website Development</li>
+              <li>Frontend Development</li>
+              <li>Backend Development (ASP.NET Core MVC)</li>
+              <li>Database Management (SQL Server)</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Contact</h3>
+
+            <div class="space-y-4 text-slate-300">
+              <p>
+                <i class="fa-solid fa-envelope brand-text mr-2"></i>
+                edehg997@gmail.com
+              </p>
+
+              <p>
+                <i class="fa-solid fa-phone brand-text mr-2"></i>
+                +234 903 0198 027
+              </p>
+
+              <p>
+                <i class="fa-solid fa-location-dot brand-text mr-2"></i>
+                Enugu, Nigeria
+              </p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-6">
+              <a
+                href="https://github.com/Chinenye997/gift-portfolio.git"
+                class="text-2xl brand-hover transition"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/gift-edeh-5a2021312?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                class="text-2xl brand-hover transition"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+
+              <a
+                href="https://x.com/edehg997"
+                class="text-2xl brand-hover transition"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/share/p/1EHpLvFVeq/"
+                class="text-2xl brand-hover transition"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-slate-700 mt-12 pt-8 text-center">
+          <p class="text-slate-400">
+            © 2026 Gift Chinenyenwa Edeh. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
