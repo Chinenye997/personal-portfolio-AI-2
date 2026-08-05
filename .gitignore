@@ -1,1 +1,4 @@
 node_modules
+desktop.ini
+pnpm-lock.yaml
+pnpm-workspace.yaml

@@ -68,12 +68,45 @@ mobileLinks.forEach(function (link) {
 // Light & Dark Mode
 // ==========================
 
-// Toggle dark mode
-// themeToggle.addEventListener("click", function () {
+// ==========================
+// Light & Dark Mode
+// ==========================
 
-//     document.documentElement.classList.toggle("dark");
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = themeToggle.querySelector("i");
 
-// });
+// Default theme is DARK
+if (!localStorage.getItem("theme")) {
+  localStorage.setItem("theme", "dark");
+}
+
+function applyTheme(theme) {
+  if (theme === "dark") {
+    document.documentElement.classList.add("dark");
+
+    themeIcon.classList.remove("fa-moon");
+    themeIcon.classList.add("fa-sun");
+  } else {
+    document.documentElement.classList.remove("dark");
+
+    themeIcon.classList.remove("fa-sun");
+    themeIcon.classList.add("fa-moon");
+  }
+}
+
+applyTheme(localStorage.getItem("theme"));
+
+themeToggle.addEventListener("click", () => {
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+
+  applyTheme(localStorage.getItem("theme"));
+});
 
 /* ==========================
    Skills Animation

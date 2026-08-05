@@ -8,6 +8,56 @@
     --brand-color: #059669;
 }
 
+
+/* ==========================
+   Dark Theme
+========================== */
+
+.dark body {
+    @apply bg-[#0f172a] text-slate-100;
+}
+
+.section-light {
+    @apply bg-white;
+}
+
+.dark .section-light {
+    @apply bg-slate-900;
+}
+
+.section-gray {
+    @apply bg-stone-100;
+}
+
+.dark .section-gray {
+    @apply bg-slate-950;
+}
+
+.card-light {
+    @apply bg-white;
+}
+
+.dark .card-light {
+    @apply bg-slate-800;
+}
+
+.text-light {
+    @apply text-slate-600;
+}
+
+.dark .text-light {
+    @apply text-slate-300;
+}
+
+.border-light {
+    @apply border-slate-300;
+}
+
+.dark .border-light {
+    @apply border-slate-700;
+}
+
+
 .brand-text {
     @apply text-emerald-600;
 }
