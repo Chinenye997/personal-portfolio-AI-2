@@ -13,41 +13,81 @@
    Dark Theme
 ========================== */
 
-.dark body {
-    @apply bg-[#0f172a] text-slate-100;
+/* ==========================
+   Theme Utility Classes
+========================== */
+
+/* Page */
+
+.page-bg {
+    @apply bg-white text-slate-800 transition-colors duration-300;
 }
 
+.dark .page-bg {
+    @apply bg-slate-950 text-slate-100;
+}
+
+/* White Sections */
+
 .section-light {
-    @apply bg-white;
+    @apply bg-white transition-colors duration-300;
 }
 
 .dark .section-light {
     @apply bg-slate-900;
 }
 
+/* Gray Sections */
+
 .section-gray {
-    @apply bg-stone-100;
+    @apply bg-stone-100 transition-colors duration-300;
 }
 
 .dark .section-gray {
     @apply bg-slate-950;
 }
 
-.card-light {
-    @apply bg-white;
+/* Cards */
+
+.card {
+    @apply bg-white rounded-[35px] shadow-xl transition-all duration-300;
 }
 
-.dark .card-light {
-    @apply bg-slate-800;
+.dark .card {
+    @apply bg-slate-900 ring-1 ring-slate-800;
 }
 
-.text-light {
+/* Headings */
+
+.heading {
+    @apply text-slate-900;
+}
+
+.dark .heading {
+    @apply text-white;
+}
+
+/* Paragraph */
+
+.paragraph {
     @apply text-slate-600;
 }
 
-.dark .text-light {
+.dark .paragraph {
     @apply text-slate-300;
 }
+
+/* Input */
+
+.input-field {
+    @apply w-full rounded-xl border border-slate-300 px-5 py-4 outline-none transition;
+}
+
+.dark .input-field {
+    @apply bg-slate-800 border-slate-700 text-white;
+}
+
+/* Border */
 
 .border-light {
     @apply border-slate-300;

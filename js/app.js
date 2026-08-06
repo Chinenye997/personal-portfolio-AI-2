@@ -3,7 +3,7 @@
 // ==========================
 
 // Select the theme toggle button
-const themeToggle = document.getElementById("theme-toggle");
+//const themeToggle = document.getElementById("theme-toggle");
 
 // Select the menu button
 const menuBtn = document.getElementById("menu-btn");
@@ -51,62 +51,70 @@ if (menuBtn && mobileMenu && menuIcon) {
 
 
 // Close the mobile menu when a link is clicked
-mobileLinks.forEach(function (link) {
+// mobileLinks.forEach(function (link) {
 
-    link.addEventListener("click", function () {
+//     link.addEventListener("click", function () {
 
-        mobileMenu.classList.add("hidden");
+//         mobileMenu.classList.add("hidden");
 
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
+//         menuIcon.classList.remove("fa-xmark");
+//         menuIcon.classList.add("fa-bars");
+
+//     });
+
+// });
+
+// ==========================
+// Light & Dark Mode
+// ==========================
+const themeToggle = document.getElementById("theme-toggle");
+
+if (themeToggle) {
+
+    const themeIcon = themeToggle.querySelector("i");
+
+    // Default theme is DARK
+    if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+    }
+
+    function applyTheme(theme) {
+
+        if (theme === "dark") {
+
+            document.documentElement.classList.add("dark");
+
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+
+        } else {
+
+            document.documentElement.classList.remove("dark");
+
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+
+        }
+
+    }
+
+    applyTheme(localStorage.getItem("theme"));
+
+    themeToggle.addEventListener("click", function () {
+
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme === "dark") {
+            localStorage.setItem("theme", "light");
+        } else {
+            localStorage.setItem("theme", "dark");
+        }
+
+        applyTheme(localStorage.getItem("theme"));
 
     });
 
-});
-
-// ==========================
-// Light & Dark Mode
-// ==========================
-
-// ==========================
-// Light & Dark Mode
-// ==========================
-
-const themeToggle = document.getElementById("theme-toggle");
-const themeIcon = themeToggle.querySelector("i");
-
-// Default theme is DARK
-if (!localStorage.getItem("theme")) {
-  localStorage.setItem("theme", "dark");
 }
-
-function applyTheme(theme) {
-  if (theme === "dark") {
-    document.documentElement.classList.add("dark");
-
-    themeIcon.classList.remove("fa-moon");
-    themeIcon.classList.add("fa-sun");
-  } else {
-    document.documentElement.classList.remove("dark");
-
-    themeIcon.classList.remove("fa-sun");
-    themeIcon.classList.add("fa-moon");
-  }
-}
-
-applyTheme(localStorage.getItem("theme"));
-
-themeToggle.addEventListener("click", () => {
-  const currentTheme = localStorage.getItem("theme");
-
-  if (currentTheme === "dark") {
-    localStorage.setItem("theme", "light");
-  } else {
-    localStorage.setItem("theme", "dark");
-  }
-
-  applyTheme(localStorage.getItem("theme"));
-});
 
 /* ==========================
    Skills Animation
@@ -188,13 +196,17 @@ function closeTranslationModal() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("translationModal");
 
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      closeTranslationModal();
+    const modal = document.getElementById("translationModal");
+
+    if (modal) {
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                closeTranslationModal();
+            }
+        });
     }
-  });
+
 });
 
 

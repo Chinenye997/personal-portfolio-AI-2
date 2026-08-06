@@ -30,13 +30,13 @@
   </head>
 
   <!-- <body class="bg-white text-gray-800 transition-colors duration-300 dark:bg-gray-900 dark:text-white"> -->
-  <body class="transition-colors duration-300">
+  <body class="transition-colors duration-300 page-bg">
     <!-- ==========================
          HEADER / NAVIGATION
     =========================== -->
 
     <!-- <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"> -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <header class="sticky top-0 z-50 section-light border-b border-light shadow-md">
       <nav
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
@@ -49,7 +49,7 @@
           </div>
 
           <div>
-            <h2 class="text-xl font-bold text-slate-900">
+            <h2 class="text-xl font-bold text-white">
               Chi<span class="brand-text">.dev</span>
             </h2>
 
@@ -138,7 +138,7 @@
       </div>
     </header>
 
-          <!-- ==========================
+    <!-- ==========================
                      MAIN CONTENT
           =========================== -->
 
@@ -149,9 +149,7 @@
       <section id="hero" class="section-gray pt-20 pb-16">
         <div class="max-w-7xl mx-auto px-6">
           <!-- Hero Card -->
-          <div
-            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-12"
-          >
+          <div class="card px-8 md:px-12 lg:px-20 py-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
               <!-- ==========================
                           Hero Content
@@ -170,9 +168,7 @@
                   Edeh
                 </h1>
 
-                <h2
-                  class="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-600 mb-6"
-                >
+                <h2 class="heading text-3xl md:text-4xl font-bold mb-6">
                   Computer Science Student &
                   <span class="brand-text">Full Stack Web Developer</span>
                 </h2>
@@ -185,15 +181,15 @@
                 </p>
 
                 <div class="flex flex-wrap gap-4">
-                 <a
-                  href="assets/resume/Gift_Chinenye_Edeh_CV (1).docx"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 font-semibold brand-text transition"
-                >
-                  View Resume
+                  <a
+                    href="assets/resume/Gift_Chinenye_Edeh_CV (1).docx"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 font-semibold brand-text transition"
+                  >
+                    View Resume
 
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
 
@@ -216,11 +212,9 @@
       <!-- ==========================
                     About Section
           ========================== -->
-      <section id="about" class="bg-stone-100 py-16">
+      <section id="about" class="section-light py-16">
         <div class="max-w-7xl mx-auto px-6">
-          <div
-            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-12"
-          >
+          <div class="card px-8 md:px-12 lg:px-20 py-12">
             <!-- Section Heading -->
             <div class="text-center mb-10">
               <p
@@ -229,7 +223,7 @@
                 About Me
               </p>
 
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              <h2 class="heading text-3xl md:text-4xl font-bold mb-6">
                 Get to Know Me
               </h2>
 
@@ -253,7 +247,7 @@
 
               <!-- Content -->
               <div>
-                <h3 class="text-3xl font-bold mb-6">
+                <h3 class="heading text-3xl font-bold mb-6">
                   Computer Science Student &
                   <span class="brand-text">Full Stack Web Developer</span>
                 </h3>
@@ -288,11 +282,9 @@
       <!-- ==========================
                Skills Preview Section
           ========================== -->
-      <section id="skills" class="bg-stone-100 py-16">
+      <section id="skills-preview" class="section-gray py-16">
         <div class="max-w-7xl mx-auto px-6">
-          <div
-            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-12"
-          >
+          <div class="card px-8 md:px-12 lg:px-20 py-12">
             <!-- Section Heading -->
             <div class="text-center mb-14">
               <p
@@ -301,7 +293,7 @@
                 My Skills
               </p>
 
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              <h2 class="heading text-3xl md:text-4xl font-bold mb-6">
                 Technologies I Work With
               </h2>
 
@@ -318,7 +310,7 @@
               <div class="grid grid-cols-2 gap-5">
                 <!-- HTML -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i
                     class="fa-brands fa-html5 text-4xl text-orange-500 mb-4"
@@ -328,7 +320,7 @@
 
                 <!-- CSS -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i
                     class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-4"
@@ -338,7 +330,7 @@
 
                 <!-- JavaScript -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4"></i>
                   <h4 class="font-semibold">JavaScript</h4>
@@ -346,7 +338,7 @@
 
                 <!-- Tailwind -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-solid fa-wind text-4xl text-cyan-500 mb-4"></i>
                   <h4 class="font-semibold">Tailwind CSS</h4>
@@ -354,7 +346,7 @@
 
                 <!-- ASP.NET -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-solid fa-code text-4xl brand-text mb-4"></i>
                   <h4 class="font-semibold">ASP.NET MVC</h4>
@@ -362,7 +354,7 @@
 
                 <!-- EF Core -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-solid fa-database text-4xl brand-text mb-4"></i>
                   <h4 class="font-semibold">EF Core</h4>
@@ -370,7 +362,7 @@
 
                 <!-- SQL -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-solid fa-server text-4xl brand-text mb-4"></i>
                   <h4 class="font-semibold">SQL Server</h4>
@@ -378,7 +370,7 @@
 
                 <!-- Git -->
                 <div
-                  class="bg-white rounded-2xl brand-shadow p-6 text-center hover:-translate-y-1 transition"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
                 >
                   <i class="fa-brands fa-github text-4xl brand-text mb-4"></i>
                   <h4 class="font-semibold">Git & GitHub</h4>
@@ -387,7 +379,7 @@
 
               <!-- Right -->
               <div>
-                <h3 class="text-3xl font-bold mb-6">
+                <h3 class=" heading text-3xl font-bold mb-6">
                   Building Modern Web Applications
                 </h3>
 
@@ -423,7 +415,7 @@
       <!-- ==========================
             Featured Projects Section
           ========================== -->
-      <section class=" bg-stone-50 py-16">
+      <section id="projects" class="section-light py-26">
         <div class="max-w-7xl mx-auto px-6">
           <!-- Heading -->
           <div class="text-center mb-16">
@@ -433,7 +425,9 @@
               Featured Projects
             </span>
 
-            <h2 class="text-4xl md:text-5xl font-bold mt-3">Recent Work</h2>
+            <h2 class="heading text-3xl md:text-4xl font-bold mb-6">
+              Recent Work
+            </h2>
 
             <p class="max-w-3xl mx-auto mt-6 text-slate-600 leading-8">
               A selection of projects demonstrating my experience in responsive
@@ -447,7 +441,7 @@
                  ========================== -->
 
             <div
-              class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+              class="card px-8 md:px-12 lg:px-20 py-12 overflow-hidden brand-shadow group"
             >
               <!-- Video -->
 
@@ -470,7 +464,7 @@
               <!-- Content -->
 
               <div class="p-7">
-                <h3 class="text-2xl font-bold mb-3">EnuguAir Travels</h3>
+                <h3 class="heading text-2xl font-bold mb-3">EnuguAir Travels</h3>
 
                 <p class="text-slate-600 leading-8 mb-6">
                   A modern and responsive travel agency website showcasing
@@ -533,7 +527,7 @@
                 ========================== -->
 
             <div
-              class="bg-white rounded-[30px] overflow-hidden brand-shadow group"
+              class="card px-8 md:px-12 lg:px-20 py-12 overflow-hidden brand-shadow group"
             >
               <!-- Video -->
 
@@ -556,7 +550,7 @@
               <!-- Content -->
 
               <div class="p-7">
-                <h3 class="text-2xl font-bold mb-3">StockWise IMS</h3>
+                <h3 class="heading text-2xl font-bold mb-3">StockWise IMS</h3>
 
                 <p class="text-slate-600 leading-8 mb-6">
                   A responsive Inventory Management System built with HTML, CSS
@@ -630,11 +624,9 @@
       <!-- ==========================
               Resume Preview Section
           ========================== -->
-      <section id="resume" class="bg-stone-100 py-16">
+      <section id="resume" class="section-gray py-16">
         <div class="max-w-7xl mx-auto px-6">
-          <div
-            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-12"
-          >
+          <div class="card px-8 md:px-12 lg:px-20 py-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
               <!-- Left -->
               <div>
@@ -644,7 +636,7 @@
                   Resume
                 </p>
 
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <h2 class="heading text-3xl md:text-4xl font-bold mb-6">
                   My Professional Resume
                 </h2>
 
@@ -672,7 +664,7 @@
               <!-- Right -->
               <div class="flex justify-center">
                 <div
-                  class="w-72 md:w-80 bg-stone-100 rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2"
+                  class="card px-8 md:px-12 lg:px-20 py-12 p-8 transition-all duration-300 hover:-translate-y-2"
                 >
                   <i
                     class="fa-solid fa-file-lines text-7xl brand-text mb-6"
@@ -695,11 +687,9 @@
       <!-- ==========================
                 Contact Preview Section
             ========================== -->
-      <section id="contact" class="bg-stone-100 py-16">
+      <section id="contact" class="section-light py-16">
         <div class="max-w-7xl mx-auto px-6">
-          <div
-            class="bg-white rounded-[35px] shadow-lg px-8 md:px-12 lg:px-20 py-12"
-          >
+          <div class="card px-8 md:px-12 lg:px-20 py-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
               <!-- Left -->
               <div>
@@ -749,13 +739,13 @@
 
               <div class="flex justify-center">
                 <div
-                  class="bg-stone-100 rounded-2xl p-10 shadow-md w-full max-w-md text-center transition-all duration-300 hover:-translate-y-2"
+                  class="card px-8 md:px-12 lg:px-20 py-12 w-full max-w-md text-center transition-all duration-300 hover:-translate-y-2"
                 >
                   <i
                     class="fa-solid fa-paper-plane text-7xl brand-text mb-6 transition-all duration-300 hover:-translate-y-2"
                   ></i>
 
-                  <h3 class="text-2xl font-bold mb-4">Open to Opportunities</h3>
+                  <h3 class="heading text-2xl font-bold mb-4">Open to Opportunities</h3>
 
                   <p class="text-slate-600 leading-8">
                     I am always eager to learn, collaborate, and contribute to
@@ -778,9 +768,24 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <!-- About -->
           <div>
-            <h2 class="text-2xl font-bold brand-text mb-5">Gift Edeh</h2>
+            <!-- Logo -->
+            <a href="#index.html" class="flex items-center gap-3">
+              <div
+                class="brand-bg w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg"
+              >
+                C
+              </div>
 
-            <p class="text-slate-300 leading-8">
+              <div>
+                <h2 class="text-xl font-bold text-white">
+                  Chi<span class="brand-text">.dev</span>
+                </h2>
+
+                <p class="text-xs paragraph leading-8 -mt-1">Full-Stack Developer</p>
+              </div>
+            </a>
+
+            <p class="paragraph leading-8">
               Computer Science Student and Full-Stack Web Developer passionate
               about building responsive, user-friendly, and modern web
               applications.
@@ -808,7 +813,7 @@
 
           <!-- Services -->
           <div>
-            <h3 class="text-xl font-semibold mb-5">What I Do</h3>
+            <h3 class="heading text-xl font-semibold mb-5">What I Do</h3>
 
             <ul class="space-y-3 text-slate-300">
               <li>Responsive Website Development</li>
@@ -873,7 +878,7 @@
 
         <!-- Bottom Footer -->
         <div class="border-t border-slate-700 mt-12 pt-8 text-center">
-          <p class="text-slate-400">
+          <p class="paragraph leading-8">
             © 2026 Gift Chinenyenwa Edeh. All Rights Reserved.
           </p>
         </div>
@@ -881,6 +886,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
