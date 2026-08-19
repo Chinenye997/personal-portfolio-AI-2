@@ -27,13 +27,15 @@
     />
   </head>
 
-  <body class="bg-stone-100">
+  <body class="transition-colors duration-300 page-bg">
     <!-- ==========================
          HEADER / NAVIGATION
     =========================== -->
 
     <!-- <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"> -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <header
+      class="sticky top-0 z-50 section-light border-b border-light shadow-md"
+    >
       <nav
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
@@ -46,7 +48,7 @@
           </div>
 
           <div>
-            <h2 class="text-xl font-bold text-slate-900">
+            <h2 class="text-xl font-bold text-white">
               Chi<span class="brand-text">.dev</span>
             </h2>
 
@@ -100,7 +102,10 @@
       </nav>
 
       <!-- Mobile Navigation -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden section-light border-b border-light shadow-md"
+      >
         <ul class="flex flex-col p-6 space-y-4">
           <li>
             <a href="#hero" class="active-link transition"> Home </a>
@@ -126,12 +131,12 @@
     </header>
 
     <!-- ==========================
-     Skills Hero Section
-========================== -->
-    <section class="bg-stone-100 py-12 md:py-16">
+             Skills Hero Section
+       ========================== -->
+    <section id="hero" class="section-gray py-12 md:py-16">
       <div class="max-w-7xl mx-auto px-6">
         <div
-          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-20 py-10 md:py-16"
+          class="card rounded-[35px] shadow-lg px-6 md:px-10 lg:px-20 py-10 md:py-16"
         >
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Left Content -->
@@ -159,16 +164,17 @@
 
               <a
                 href="../index.html#projects"
-                class="inline-block brand-bg text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1"
+                class="inline-flex items-center gap-2 font-semibold brand-text transition"
               >
                 View My Projects
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
 
             <!-- Right Content -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div
-                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
               >
                 <i class="fa-solid fa-code text-4xl brand-text mb-4"></i>
                 <h3 class="font-bold text-lg">Frontend</h3>
@@ -178,7 +184,7 @@
               </div>
 
               <div
-                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
               >
                 <i class="fa-solid fa-server text-4xl brand-text mb-4"></i>
                 <h3 class="font-bold text-lg">Backend</h3>
@@ -186,7 +192,7 @@
               </div>
 
               <div
-                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
               >
                 <i class="fa-solid fa-database text-4xl brand-text mb-4"></i>
                 <h3 class="font-bold text-lg">Database</h3>
@@ -194,7 +200,7 @@
               </div>
 
               <div
-                class="bg-stone-50 rounded-2xl p-8 min-h-[220] flex flex-col justify-center text-center shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                class="card px-8 md:px-12 lg:px-20 py-12 p-6 text-center hover:-translate-y-1 transition"
               >
                 <i class="fa-brands fa-github text-4xl brand-text mb-4"></i>
                 <h3 class="font-bold text-lg">Tools</h3>
@@ -209,13 +215,11 @@
     </section>
 
     <!-- ==========================
-     Frontend Development
-========================== -->
-    <section class="bg-stone-100 py-12">
+              Frontend Development
+        ========================== -->
+    <section class="section-light py-12">
       <div class="max-w-7xl mx-auto px-6">
-        <div
-          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
-        >
+        <div class="card rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12">
           <!-- Heading -->
           <div class="text-center mb-12">
             <p class="brand-text font-semibold text-lg mb-3">
@@ -237,7 +241,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- HTML -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              class="card rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <i class="fa-brands fa-html5 text-5xl text-orange-500 mb-5"></i>
               <h3 class="font-bold text-xl mb-2">HTML5</h3>
@@ -248,7 +252,7 @@
 
             <!-- CSS -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              class="card rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <i class="fa-brands fa-css3-alt text-5xl text-blue-500 mb-5"></i>
               <h3 class="font-bold text-xl mb-2">CSS3</h3>
@@ -259,7 +263,7 @@
 
             <!-- Tailwind -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              class="card rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <i class="fa-solid fa-wind text-5xl text-cyan-500 mb-5"></i>
               <h3 class="font-bold text-xl mb-2">Tailwind CSS</h3>
@@ -270,7 +274,7 @@
 
             <!-- JavaScript -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              class="card rounded-2xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <i class="fa-brands fa-js text-5xl text-yellow-400 mb-5"></i>
               <h3 class="font-bold text-xl mb-2">JavaScript</h3>
@@ -284,13 +288,11 @@
     </section>
 
     <!-- ==========================
-     Backend Development
-========================== -->
-    <section class="bg-stone-100 py-12">
+           Backend Development
+        ========================== -->
+    <section class="section-light py-12">
       <div class="max-w-7xl mx-auto px-6">
-        <div
-          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
-        >
+        <div class="card rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12">
           <!-- Heading -->
           <div class="text-center mb-12">
             <p class="brand-text font-semibold text-lg mb-3">
@@ -312,7 +314,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- ASP.NET -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-code text-5xl brand-text mb-5"></i>
 
@@ -327,7 +329,7 @@
 
             <!-- SQL -->
             <div
-              class="bg-stone-50 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-database text-5xl brand-text mb-5"></i>
 
@@ -345,13 +347,11 @@
     </section>
 
     <!-- ==========================
-     Artificial Intelligence
-========================== -->
-    <section class="bg-stone-100 py-12">
+             Artificial Intelligence
+       ========================== -->
+    <section class="section-light py-12">
       <div class="max-w-7xl mx-auto px-6">
-        <div
-          class="bg-white rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12"
-        >
+        <div class="card rounded-[35px] shadow-lg px-6 md:px-10 lg:px-16 py-12">
           <!-- Heading -->
           <div class="text-center mb-12">
             <p class="brand-text font-semibold text-lg mb-3">
@@ -374,7 +374,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Prompt Engineering -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-brain text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">Prompt Engineering</h3>
@@ -386,7 +386,7 @@
 
             <!-- NLP -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-language text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">
@@ -400,7 +400,7 @@
 
             <!-- Tokenization -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-font text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">Tokenization</h3>
@@ -412,7 +412,7 @@
 
             <!-- NER -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-tags text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">Named Entity Recognition</h3>
@@ -425,7 +425,7 @@
             <!-- Sentiment -->
             <div
               onclick="openSentimentModal()"
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
             >
               <div class="flex justify-between items-start mb-4">
                 <i class="fa-solid fa-face-smile text-4xl brand-text"></i>
@@ -454,7 +454,7 @@
             <!-- Translation -->
             <div
               onclick="openTranslationModal()"
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
             >
               <div class="flex justify-between items-start mb-4">
                 <i class="fa-solid fa-globe text-4xl brand-text"></i>
@@ -484,7 +484,7 @@
 
             <!-- Computer Vision -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-eye text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">Computer Vision</h3>
@@ -496,7 +496,7 @@
 
             <!-- Documentation -->
             <div
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <i class="fa-solid fa-file-lines text-4xl brand-text mb-4"></i>
               <h3 class="text-xl font-bold mb-3">Software Documentation</h3>
@@ -509,7 +509,7 @@
             <!-- Podcast -->
             <div
               onclick="openPodcastModal()"
-              class="bg-stone-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
+              class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group"
             >
               <div class="flex justify-between items-start mb-4">
                 <i class="fa-solid fa-podcast text-4xl brand-text"></i>
@@ -552,7 +552,7 @@
       class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4 py-8 overflow-y-auto"
     >
       <div
-        class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl p-6 md:p-8 relative animate-fadeIn my-auto max-h-[90vh] overflow-y-auto"
+        class="card rounded-3xl shadow-2xl w-full max-w-2xl p-6 md:p-8 relative animate-fadeIn my-auto max-h-[90vh] overflow-y-auto"
       >
         <!-- Close Button -->
         <button
@@ -589,7 +589,7 @@
         <!-- Versions -->
         <div class="space-y-8">
           <!-- English Version -->
-          <div class="bg-stone-100 rounded-2xl p-6">
+          <div class="card rounded-2xl p-6">
             <div class="flex items-center gap-3 mb-3">
               <span class="text-3xl">📖</span>
 
@@ -622,7 +622,7 @@
           </div>
 
           <!-- Igbo Version -->
-          <div class="bg-stone-100 rounded-2xl p-6">
+          <div class="card rounded-2xl p-6">
             <div class="flex items-center gap-3 mb-3">
               <span class="text-3xl">🌍</span>
 
@@ -665,7 +665,7 @@
       class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4 py-8 overflow-y-auto"
     >
       <div
-        class="bg-white rounded-3xl shadow-2xl w-full max-w-3xl p-6 md:p-8 my-auto max-h-[90vh] overflow-y-auto animate-fadeIn relative"
+        class="card rounded-3xl shadow-2xl w-full max-w-3xl p-6 md:p-8 my-auto max-h-[90vh] overflow-y-auto animate-fadeIn relative"
       >
         <!-- Close Button -->
         <button
@@ -692,12 +692,12 @@
 
         <!-- Project Information -->
         <div class="grid md:grid-cols-2 gap-6 mb-8">
-          <div class="bg-stone-100 rounded-2xl p-5">
+          <div class="card rounded-2xl p-5">
             <h3 class="font-bold mb-2">Data Source</h3>
             <p class="text-slate-600">TikTok & YouTube</p>
           </div>
 
-          <div class="bg-stone-100 rounded-2xl p-5">
+          <div class="card rounded-2xl p-5">
             <h3 class="font-bold mb-2">Comments Analyzed</h3>
             <p class="text-slate-600">137 Customer Comments</p>
           </div>
@@ -766,7 +766,7 @@
         </div>
 
         <!-- Conclusion -->
-        <div class="bg-stone-100 rounded-2xl p-6 mb-6">
+        <div class="card rounded-2xl p-6 mb-6">
           <h3 class="text-xl font-bold mb-3">Conclusion</h3>
 
           <p class="text-slate-600 leading-8">
@@ -782,10 +782,11 @@
             href="../assets/sentiment/Ntachi_Osa_Sentiment_Report (1).pdf"
             target="_blank"
             rel="noopener noreferrer"
-            class="brand-bg text-white px-8 py-3 rounded-xl font-semibold inline-flex items-center gap-2 transition hover:opacity-90"
+            class="inline-flex items-center gap-2 font-semibold brand-text transition"
           >
             <i class="fa-solid fa-book-open-reader"></i>
             Read Full Analysis
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -800,7 +801,7 @@
       class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4 py-6 overflow-y-auto"
     >
       <div
-        class="bg-white w-full max-w-6xl rounded-[35px] shadow-2xl relative p-6 md:p-10 max-h-[90vh] overflow-y-auto animate-fadeIn"
+        class="card w-full max-w-6xl rounded-[35px] shadow-2xl relative p-6 md:p-10 max-h-[90vh] overflow-y-auto animate-fadeIn"
       >
         <!-- Close Button -->
         <button
@@ -888,7 +889,7 @@
 
             <div
               id="jollof-container"
-              class="bg-stone-100 flex items-center justify-center p-8 min-h-[300px]"
+              class="card flex items-center justify-center p-8 min-h-[300px]"
             >
               <div class="text-center">
                 <i class="fa-solid fa-circle-play text-7xl brand-text mb-5"></i>
@@ -938,7 +939,7 @@
 
             <div
               id="focus-container"
-              class="bg-stone-100 flex items-center justify-center p-8 min-h-[300px]"
+              class="card flex items-center justify-center p-8 min-h-[300px]"
             >
               <div class="text-center">
                 <i class="fa-solid fa-circle-play text-7xl brand-text mb-5"></i>
@@ -977,16 +978,24 @@
             <h3 class="text-xl font-semibold mb-5">Quick Links</h3>
 
             <ul class="space-y-3">
-              <li><a href="/index.html" class="brand-hover transition">Home</a></li>
+              <li>
+                <a href="/index.html" class="brand-hover transition">Home</a>
+              </li>
               <li><a href="#about" class="brand-hover transition">About</a></li>
               <li>
-                <a href="./skills.html" class="brand-hover transition">Skills</a>
+                <a href="./skills.html" class="brand-hover transition"
+                  >Skills</a
+                >
               </li>
               <li>
-                <a href="./projects.html" class="brand-hover transition">Projects</a>
+                <a href="./projects.html" class="brand-hover transition"
+                  >Projects</a
+                >
               </li>
               <li>
-                <a href="./contact.html" class="brand-hover transition">Contact</a>
+                <a href="./contact.html" class="brand-hover transition"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
